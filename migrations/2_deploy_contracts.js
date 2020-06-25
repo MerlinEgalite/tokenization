@@ -1,5 +1,5 @@
-var SimpleStorage = artifacts.require("./SimpleStorage.sol");
+var MyToken = artifacts.require("./MyToken.sol");
 
-module.exports = function(deployer) {
-  deployer.deploy(SimpleStorage);
+module.exports = async function(deployer) {
+  deployer.deploy(MyToken, 10000000);
 };
